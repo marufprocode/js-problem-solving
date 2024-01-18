@@ -1,5 +1,8 @@
 # js-problem-solving
 
+## coderbyte beginner solution: 
+https://github.com/ratracegrad/coderbyte-Beginner/blob/master/Array%20Addition%20I
+
 ## Interview Question:
 ১. JavaScript এবং ECMAScript এর মধ্যে কি পার্থক্য এবং কিভাবে তারা সম্পর্কিত?
 ২. Closure কি এবং কিভাবে Lexical Scope-এর সাথে সম্পর্কিত?
