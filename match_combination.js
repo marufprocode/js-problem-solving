@@ -60,3 +60,35 @@ function ArrayAdditionI(arr) {
   }
 
 console.log(ArrayAdditionI([4, 6, 23, 10, 1, 3]));
+
+
+// Another Solution
+// const arr = [4, 6, 23, 10, 1, 2];
+
+// let large = 0;
+// let sum = 0;
+// let res = false;
+
+// arr.forEach((item, i) => {
+//   if (item > arr[large]) {
+//     large = i;
+//   }
+// });
+
+// for (let i = 0; i < arr.length; i++) {
+//   sum = arr[i];
+//   for (let j = 0; j < arr.length; j++) {
+//     if (j === large) {
+//       continue;
+//     }
+//     sum += arr[j];
+//     if (sum === arr[large]) {
+//       res = true;
+//       break;
+//     }
+//     if (sum > arr[large]) {
+//       sum -= arr[i];
+//     }
+//   }
+// }
+// console.log(res);
