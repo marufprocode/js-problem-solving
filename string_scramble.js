@@ -4,9 +4,13 @@ const stringScramble = (str1, str2) => {
     const matcherArr = str1.split("")
     return str2.split("").every(el => {
         const findIndex = matcherArr.findIndex(i => i === el)
-        if(findIndex)
-        return str1.split("").includes(el)
+        console.log({findIndex})
+        if(findIndex >= 0){
+            matcherArr.splice(findIndex, 1)
+            return true
+        }
+        return false
     });
 }
 
-console.log(stringScramble("rkqodlw", "world"))
+console.log(stringScramble("rkqodllw", "worlld"))
