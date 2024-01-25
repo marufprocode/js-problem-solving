@@ -20,12 +20,17 @@ function removeDuplicateValues(obj) {
     const uniqueValues = new Set(Object.values(obj));
     const newObj = {};
   
-    for (const key in obj) {
-      if (uniqueValues.has(obj[key])) {
-        newObj[key] = obj[key];
-        uniqueValues.delete(obj[key]);
+    // for (const key in obj) {
+    //   if (uniqueValues.has(obj[key])) {
+    //     newObj[key] = obj[key];
+    //     uniqueValues.delete(obj[key]);
+    //   }
+    // }
+    Object.entries(obj).forEach(([key, value]) => {
+      if(!newObj[key] && !Object.values(newObj).includes(value)){
+        newObj[key]=obj[key]
       }
-    }
+    })
   
     return newObj;
   }

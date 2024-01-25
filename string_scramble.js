@@ -4,7 +4,6 @@ const stringScramble = (str1, str2) => {
     const matcherArr = str1.split("")
     return str2.split("").every(el => {
         const findIndex = matcherArr.findIndex(i => i === el)
-        console.log({findIndex})
         if(findIndex >= 0){
             matcherArr.splice(findIndex, 1)
             return true
